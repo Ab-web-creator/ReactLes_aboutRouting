@@ -1,3 +1,13 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
 .page-container {
     width: 100%;
     height: 100vh;
@@ -5,6 +15,7 @@
     background: rgb(44,47,57);
     /*Wil jij ook zo'n coole gradient maken? Deze is gemaakt via https://cssgradient.io/ - kind kan de was doen!*/
     background: linear-gradient(37deg, rgba(44,47,57,1) 0%, rgba(0,0,0,1) 8%, rgba(80,83,92,1) 100%);
+    padding: 150px 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,5 +23,124 @@
 }
 
 .page-container img {
-    width: 500px;
+    width: 200px;
 }
+
+.page-container h1 {
+    width: 350px;
+    font-size: 26px;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    /*gap: 30px;*/
+}
+.general-container ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navigatie {
+    padding: 10px 40px;
+    background-color: gray;
+    width: 100%;
+}
+.navigatie a {
+    color: white;
+    transition: all 0.4s ease-in-out;
+
+}
+.navigatie li:hover a {
+    color: blue;
+}
+
+.navigatie li>* {
+    text-align: center;
+    font-size: 14px;
+    min-width: 100px;
+    border-radius: 5px;
+    padding: 4px 20px;
+    background-color: red;
+    transition: all 0.4s ease-in-out;
+}
+.navigatie li>*:hover {
+    font-size: 14px;
+    min-width: 100px;
+    border-radius: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.outlet {
+padding: 40px;
+    background-color: lightyellow;
+    height: 100%;
+}
+
+.spacer40px {
+    margin: 40px 0px;
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+
+em {
+    font-size: 12px;
+    color: green;
+}
+
+.social-media {
+    color: gray;
+}
+
+.blog-preview {
+    background-color: white;
+    border: 1px solid gray;
+    margin: 40px;
+    padding: 30px;
+}
+
+.big-title {
+    text-align: center;
+}
+
+.input-fields {
+    display: flex;
+flex-direction: column;
+}
+
+form label{
+    padding-left: 5px;
+}
+
+form input,
+form textarea  {
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 0.4px solid gray;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* CSS for the submit button */
+button[type="submit"] {
+    background-color: red; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Padding around the button text */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect */
+button[type="submit"]:hover {
+    background-color: darkred; /* Change the background color on hover */
+}
+
