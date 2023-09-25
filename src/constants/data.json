@@ -1,5 +1,5 @@
-[
-  {
+{
+  "blogs": [{
     "id": 1,
     "title": "De Smaken van Italië",
     "subtitle": "Een culinaire reis door Bella Italia",
@@ -186,4 +186,5 @@
     "comments": 15,
     "shares": 8
   }
-]
+  ]
+}
